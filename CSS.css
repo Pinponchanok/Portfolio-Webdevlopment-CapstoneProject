@@ -1,0 +1,185 @@
+
+.logo-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vh;
+    padding: 1rem;
+    
+}
+
+.menubar li {
+    list-style: none;
+    display: inline-block;
+    
+    
+}
+
+.menubar {
+    display: flex;
+    
+    justify-content: end;
+    gap: 30px; 
+    margin-right: 50px;
+}
+
+.introducebox {
+    display: flex; 
+    justify-content: center;
+    background-color: #FDF4F5;
+}
+    
+.introduce {
+    display: grid; 
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto) ;
+    margin-left: 120px;
+    margin-top: 150px;
+    margin-right: 100px;
+    
+    
+} 
+
+.sayhi {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 1rem;
+    color: #BA90C6;
+}
+
+.whoiam {
+    grid-area: 2 / 1 / 3 / 4;
+    
+} 
+
+.Icon {
+    grid-area: 3 / 1 / 4 / 3 ; 
+} 
+
+.linkenid {
+    margin-right: 30px;
+}
+.profile {
+    grid-area: 1 / 4 / 4 / 5; 
+    margin-left: 80px;
+    
+}
+
+.navbar .logo-box {
+    font-family: "Patua one"; 
+
+}
+
+.navbar .logo-box h1 {
+    font-size: 2.5rem;
+}
+
+.navbar .logo-box .menubar .navbar-nav {
+    font-size: 1.5rem;
+}
+
+.introduce div {
+    font-family: "Patua one";
+}
+
+.navbar{
+    background-color: #BA90C6; 
+    
+}
+
+
+
+
+span {
+    color: #BA90C6; 
+
+}
+
+span {
+    position: relative;
+}
+
+
+
+span::after{
+    left: 0;
+    content: "";
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-left: 2px solid #BA90C6 ; 
+    animation: typing 3s steps(14) infinite;
+}  
+
+.intro {
+    
+    display: flex; 
+    justify-content: center; 
+    margin: 100px 20px; 
+    padding: 0px 117px 0px 117px; 
+    text-align: center;   
+} 
+
+.intro .intro-feature {
+    font-family: "Patua one"; 
+    font-size: 1.5rem;
+    color: #BA90C6;
+}  
+
+.intro .intro-feature::after {
+    color: pink; 
+    animation: ;
+}
+
+
+
+@keyframes typing {
+    100% { 
+        left: 100%;
+        margin: 0 -35px 0 35px ;
+    } 
+}  
+
+@keyframes glowtext {
+    0% {
+        background-position: 0%;
+    } 
+    100% {
+        background-position: 400%;
+    }
+    
+} 
+
+.glowtext { 
+    background: linear-gradient(90deg , #FFECEC, #FFBDF7, #E1AEFF, #FF78C4,#FF78C4,#E1AEFF,#FFBDF7,#FFECEC); 
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation-name: glowtext; 
+    animation-iteration-count: infinite;  
+    animation-duration: 20s; 
+    animation-delay: 2s;
+}
+
+@media (max-width: 1057px) {
+    .introduce {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 30px; 
+        text-align: center;
+        margin-left: 100px;
+        margin-top: 100px;
+    } 
+
+    .profile{
+        margin-left: 0px;
+    }
+
+    span::after {
+        animation: none;
+    border-left: none;
+    background: none;}
+}

@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Patua One";
+    
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #E8A0BF;
+}
+
+.box {
+    max-width: 1080px;
+    margin: 50px auto; 
+    padding: 0 20px; 
+    position: relative;
+}
+
+.box .center-line {
+    position: absolute;
+    height: 100%;
+    width: 4px; 
+    background: #FDF4F5 ;
+    left: 50%; 
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+.box .row { 
+    display: flex; 
+    justify-content: flex-start;
+} 
+
+.box .row-1 {
+    justify-content: flex-start;
+} 
+
+.box .row-2 {
+    justify-content: flex-end;
+}
+
+.box .row section {
+    background: #FDF4F5;
+    border-radius: 5px; 
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+} 
+
+.box .row section::before {
+    position: absolute;
+    content: ""; 
+    height: 15px;
+    width: 15px; 
+    background: #FDF4F5; 
+    top: 28px; 
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.row-1 section::before { 
+    right: -8px;
+
+} 
+
+.row-2 section::before {
+    left: -8px;
+}
+
+.row section .icon , .center-line .scroll-icon {
+    position: absolute; 
+    background: #FDF4F5; 
+    width: 40px; 
+    height: 40px; 
+    line-height: 40px; 
+    border-radius: 50%;
+}
+
+.row section .icon .getintouni { 
+    position: relative; 
+    width: 30px;
+    text-align: center; 
+    left: 5px;
+    top: 5px;
+}
+
+
+.row section .icon .internship { 
+    position: relative; 
+    width: 30px;
+    text-align: center; 
+    left: 5.2px;
+    top: 4px;
+
+} 
+
+.row-1 section .icon {
+    right: -60px;
+} 
+
+.row-2 section .icon {
+    left: -60px;
+}
+
+.center-line .scroll-icon {
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+}
+
+.center-line .scroll-icon .arrow-up {
+    width: 30px;
+    position: relative;
+    top: 5px;
+}
+
+
+.row section .detail {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.row section .detail .title {
+    font-size: 1.3rem; 
+    
+} 
+
+.row section p {
+    margin: 10px 0 17px 0;
+} 
+
+p{
+    text-indent: 25px; 
+    width: 400px; 
+} 
+
+.head { 
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    
+   
+} 
+
+.header {
+    top: 0; 
+    width: 100%;
+    padding: 60px 100px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+   
+} 
+
+.logo {
+    text-transform: uppercase;
+    font-size: 2.25rem; 
+    font-weight: 800; 
+    color: #FDF4F5; 
+    text-shadow: 2px 2px 2px black;
+}
+
+.home-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px; 
+    transition: 0.3s;
+    transition-property: background ;
+} 
+
+.home-button:hover {
+    background: #BA90C6;
+}
+
+.homeimg {
+    height: 30px; 
+    position: relative; 
+    top: 9px; 
+    left: 10px;
+}  
+
+@media (max-width: 1057px) {
+    .box .center-line {
+        left: 40px;
+    }
+    .box .row {
+        margin: 30px 0 3px 60px;
+    } 
+
+    .box .row section {
+        width: 100%;
+    }
+
+    .row-1 section::before {
+        left: -8px;
+    } 
+
+    .row-1 section .icon {
+        left: -60px;
+    }
+    p{
+        text-indent: 0px;
+    }
+} 
+
+@media (max-width: 440px) {
+    .box .center-line , .row section::before, .row section .icon{
+        display: none;
+    }
+
+    .box .row {
+        margin: 10px 0;
+    }
+    p{
+        text-indent: 0px;
+    }
+
+}
+
+@media (max-width: 414px) {
+    p{
+        width: 300px;
+    }
+}
+
+
+  
+    
+    
+    
